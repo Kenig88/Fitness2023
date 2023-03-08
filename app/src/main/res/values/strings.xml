@@ -2,4 +2,6 @@
     <string name="app_name">Fitness2023</string>
     <string name="day">День:</string>
     <string name="exercise">упражнений</string>
+    <string name="start">начать</string>
+    <string name="next">следующее упражнение</string>
 </resources>
