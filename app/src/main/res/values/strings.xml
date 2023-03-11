@@ -4,4 +4,10 @@
     <string name="exercise">упражнений</string>
     <string name="start">начать</string>
     <string name="next">следующее упражнение</string>
+    <string name="done">Done</string>
+    <string name="done_fragment">список дней</string>
+    <string name="done_day_finish">День пройден</string>
+    <string name="get_ready">Приготовьтесь</string>
+    <string name="exercise_list">Список упражнений</string>
+    <string name="days_list">Список дней</string>
 </resources>

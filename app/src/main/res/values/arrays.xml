@@ -6,7 +6,7 @@
         <item>Glute activation|x10|activacion_de_glutios.gif</item><!--2-->
         <item>Bike|40|bicicleta.gif</item><!--3-->
         <item>Push-ups|x30|flexiones.gif</item><!--4-->
-        <item>Jump push-ups|x30|flexiones_salto.gif</item><!--5-->
+        <item>Jump push-ups|30|flexiones_salto.gif</item><!--5-->
         <item>Knees to chest|30|rodillas_al_pecho.gif</item><!--6-->
         <item>Knees to chest (Hard)|30|rodillas_inclinados_al_pecho.gif</item><!--7-->
     </string-array>

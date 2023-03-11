@@ -6,9 +6,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
+import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
-import com.example.fitness2023.adapters.ExercisesFragment
+import com.example.fitness2023.R
 import com.example.fitness2023.databinding.WaitingFragmentBinding
 import com.example.fitness2023.utils.FragmentManager
 import com.example.fitness2023.utils.TimeUtils
@@ -17,6 +17,7 @@ const val COUNT_DOWN_TIME = 6000L //13
 class WaitingFragment : Fragment() {
     private lateinit var binding: WaitingFragmentBinding
     private lateinit var timer : CountDownTimer
+    private var ab: ActionBar? = null //19.2.0
 
     override fun onCreateView( //создаёт все view
         inflater: LayoutInflater, container: ViewGroup?,
@@ -28,6 +29,8 @@ class WaitingFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) { //запускается когда все view уже созданы
         super.onViewCreated(view, savedInstanceState)
+        ab = (activity as AppCompatActivity).supportActionBar //19.2.1
+        ab?.title = getString(R.string.get_ready) //19.2.2
         binding.pBar.max = COUNT_DOWN_TIME.toInt() //13.2
         startTimer() //14.4
     }
@@ -39,7 +42,7 @@ class WaitingFragment : Fragment() {
                 pBar.progress = restTime.toInt() //13.3
             }
             override fun onFinish() {
-                FragmentManager.setFragment(ExercisesFragment.newInstance(),
+                FragmentManager.setFragment(ExercisesFragment.newInstance(), //15.0.1
                     activity as AppCompatActivity)
             }
         }.start()

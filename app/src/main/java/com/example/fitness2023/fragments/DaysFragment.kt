@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.activityViewModels
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -18,6 +19,7 @@ import com.example.fitness2023.utils.MainViewModel
 
 
 class DaysFragment : Fragment(), DaysAdapter.Listener {
+    private var ab: ActionBar? = null //19.3.0
     private lateinit var binding: FragmentDaysBinding
     private val model: MainViewModel by activityViewModels() //10.1.1
 
@@ -31,6 +33,8 @@ class DaysFragment : Fragment(), DaysAdapter.Listener {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) { //3 //запускается когда все view уже созданы
         super.onViewCreated(view, savedInstanceState)
+        ab = (activity as AppCompatActivity).supportActionBar //19.3.1
+        ab?.title = getString(R.string.days_list) //19.3.2
         initRcView()
     }
 
