@@ -10,4 +10,9 @@
     <string name="get_ready">Приготовьтесь</string>
     <string name="exercise_list">Список упражнений</string>
     <string name="days_list">Список дней</string>
+    <string name="reset_progress">Сбросить прогресс</string>
+    <string name="attention">Внимание!</string>
+    <string name="cancel">Отменить</string>
+    <string name="reset_all_days">Сбросить весь прогресс?</string>
+    <string name="reset_one_day">Сбросить весь прогресс данного дня?</string>
 </resources>

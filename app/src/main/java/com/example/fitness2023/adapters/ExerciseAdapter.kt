@@ -19,6 +19,7 @@ class ExerciseAdapter() : ListAdapter<ExerciseModel, //11
         fun setData(exercise: ExerciseModel) = with(binding){
             tvName.text = exercise.name
             tvCount.text = exercise.time
+            chB.isChecked = exercise.isDone //21.1
             imEx.setImageDrawable(GifDrawable(root.context.assets, exercise.gif)) //12
         }
     }

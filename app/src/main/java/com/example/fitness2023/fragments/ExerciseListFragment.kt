@@ -36,6 +36,9 @@ class ExerciseListFragment : Fragment() {
         ab?.title = getString(R.string.exercise_list) //19.1.2
         initRcView() //11.2
         model.mutableListExercise.observe(viewLifecycleOwner){
+            for(i in 0 until model.getExerciseCount()){ //21
+                it[i] = it[i].copy(isDone = true)
+            }
             adapter.submitList(it)
         } //10.2.2
     }

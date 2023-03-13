@@ -3,7 +3,7 @@
     <string-array name="exercise">
         <item>Relax|30|rest.gif|</item><!--0-->
         <item>V type ABS|30|v_ab.gif</item><!--1-->
-        <item>Glute activation|x10|activacion_de_glutios.gif</item><!--2-->
+        <item>Glute activation|x30|activacion_de_glutios.gif</item><!--2-->
         <item>Bike|40|bicicleta.gif</item><!--3-->
         <item>Push-ups|x30|flexiones.gif</item><!--4-->
         <item>Jump push-ups|30|flexiones_salto.gif</item><!--5-->
