@@ -71,6 +71,8 @@ class ExercisesFragment : Fragment() { //15
 
     private fun setExerciseType(exercise: ExerciseModel){ //16
         if(exercise.time.startsWith("x")){
+            binding.pBar.progress = 0
+            timer?.cancel() //27
             binding.tvTime.text = exercise.time
         } else {
             startTimer(exercise)

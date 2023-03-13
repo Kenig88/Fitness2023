@@ -52,7 +52,8 @@
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="30dp"
                 android:progress="50"
-                android:progressTint="@color/white" />
+                android:progressTint="@color/white"
+                android:scaleY="1.5" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
@@ -67,6 +68,7 @@
         android:id="@+id/bNextEx"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/yellow"
         android:text="@string/next"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/cardView4"
